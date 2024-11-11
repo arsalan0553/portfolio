@@ -14,7 +14,11 @@ import {
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
-
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 //  data
 const aboutData = [
   {
@@ -92,7 +96,25 @@ const aboutData = [
 ];
 
 const About = () => {
-  return <div>About</div>;
+  const [index, setIndex] = useState(0);
+  return (
+    <div className="h-full bg-primary/30 py-32 text-center">
+      <Circles />
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+      >
+        <Avatar />
+      </motion.div>
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+        <div>text</div>
+        <div>about</div>
+      </div>
+    </div>
+  );
 };
 
 export default About;
