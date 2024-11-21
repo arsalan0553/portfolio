@@ -15,7 +15,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="h2 mt-20 xl:mt-8 md:mt-72"
             >
               My work<span className="text-accent">.</span>
             </motion.h2>
