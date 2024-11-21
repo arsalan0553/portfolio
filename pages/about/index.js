@@ -14,7 +14,7 @@ import {
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
-import Avatar from "../../components/Avatar";
+import AboutAvatar from "../../components/AboutAvatar";
 import Circles from "../../components/Circles";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -107,9 +107,9 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[120px] "
       >
-        {/* <Avatar /> */}
+        <AboutAvatar />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
