@@ -26,9 +26,11 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
-              excepturi optio! Doloribus error nam fugit beatae eveniet quod
-              nemo harum
+              I specialize in full-stack development, building everything from
+              responsive websites to secure applications. Whether it's creating
+              real-time features, e-commerce solutions, or custom CMS platforms,
+              I focus on delivering practical, user-friendly solutions that help
+              businesses grow and succeed.
             </motion.p>
           </div>
           <motion.div

@@ -166,7 +166,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] md:max-w-[700px] text-xs md:text-sm xl:text-base  mx-auto xl:mx-0 mb-6 xl:mb- px-2 xl:px-0"
+            className="xl:max-w-[500px] md:max-w-[700px] text-xs md:text-sm xl:text-base  mx-auto xl:mx-0 mb-6 xl:mb- px-2 xl:px-0"
           >
             Over the past two years, I’ve freelanced as a developer to build
             dynamic web applications. I’ve honed my skills in the MERN stack,
@@ -220,7 +220,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] xl:mt-6 xl:h-[480px] xl:pb-0 pb-24"
+          className="flex flex-col w-full xl:max-w-[48%] xl:mt-6 xl:h-[480px] xl:pb-0 pt-2 pb-24"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
