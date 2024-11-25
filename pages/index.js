@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center pt-36 xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -16,18 +16,19 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Building Dreams <br /> Into{" "}
+            <span className="text-accent">Digital Solutions</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-12"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
-            assumenda voluptates temporibus quasi facere maxime deleniti.
+            Hi, <span className=" text-accent font-bold">Arsalan</span> here, I
+            can transform complex ideas into elegant, real-world applications
+            through expertise in full-stack development and real-time systems.
           </motion.p>
           <div className="flex justify-center xl:hidden">
             <ProjectsBtn />

@@ -1,48 +1,86 @@
 // icons
 import {
-  FaHtml5,
   FaCss3,
-  FaJs,
+  FaDocker,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
 } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-import AboutAvatar from "../../components/AboutAvatar";
-import Circles from "../../components/Circles";
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { useState } from "react";
 import CountUp from "react-countup";
+import {
+  SiAmazonaws,
+  SiElectron,
+  SiExpress,
+  SiGraphql,
+  SiJira,
+  SiMongodb,
+  SiNestjs,
+  SiNextdotjs,
+  SiPostgresql,
+  SiRedux,
+  SiTailwindcss,
+  SiMaterialdesign,
+  SiChakraui,
+  SiTypescript,
+  SiJavascript,
+} from "react-icons/si";
+import Circles from "../../components/Circles";
+import { fadeIn } from "../../variants";
 //  data
 const aboutData = [
   {
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Programming Languages",
         icons: [
-          { icon: <FaHtml5 key="html5" /> },
-          { icon: <FaCss3 key="css3" /> },
-          { icon: <FaJs key="js" /> },
-          { icon: <FaReact key="react" /> },
-          { icon: <SiNextdotjs key="nextjs" /> },
-          { icon: <SiFramer key="framer" /> },
-          { icon: <FaWordpress key="wordpress" /> },
+          { icon: <SiJavascript key="javascript" /> },
+          { icon: <SiTypescript key="typescript" /> },
+          { icon: <SiPostgresql key="postgresql" /> },
+          { icon: <SiMongodb key="mongodb" /> },
+          { icon: <SiGraphql key="graphql" /> },
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Web Technologies",
         icons: [
-          { icon: <FaFigma key="figma" /> },
-          { icon: <SiAdobexd key="adobexd" /> },
-          { icon: <SiAdobephotoshop key="photoshop" /> },
+          { icon: <FaReact key="react" /> },
+          { icon: <SiNextdotjs key="nextjs" /> },
+          { icon: <FaNodeJs key="nodejs" /> },
+          { icon: <SiExpress key="express" /> },
+          { icon: <SiNestjs key="nestjs" /> },
+          { icon: <SiRedux key="redux" /> },
+          { icon: <SiElectron key="electron" /> },
+        ],
+      },
+      {
+        title: "Frontend Tools",
+        icons: [
+          { icon: <FaHtml5 key="html5" /> },
+          { icon: <FaCss3 key="css3" /> },
+          { icon: <SiTailwindcss key="tailwindcss" /> },
+          { icon: <SiMaterialdesign key="material" /> },
+          { icon: <SiChakraui key="chakra" /> },
+        ],
+      },
+      {
+        title: "Databases & Cloud",
+        icons: [
+          { icon: <SiPostgresql key="postgresql" /> },
+          { icon: <SiMongodb key="mongodb" /> },
+          { icon: <SiAmazonaws key="aws" /> },
+        ],
+      },
+      {
+        title: "Tools & Platforms",
+        icons: [
+          { icon: <FaDocker key="docker" /> },
+          { icon: <FaGitAlt key="git" /> },
+          { icon: <SiJira key="jira" /> },
         ],
       },
     ],
@@ -100,7 +138,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left xl:overflow-hidden overflow-y-auto">
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -109,9 +147,9 @@ const About = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[120px] "
       >
-        <AboutAvatar />
+        {/* <AboutAvatar /> */}
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full xl:mt-12 flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -120,19 +158,22 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnficent designs.
+            Great <span className="text-accent">Ideas</span> Transform Into
+            Masterpieces.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] md:max-w-[700px] text-xs md:text-sm xl:text-base  mx-auto xl:mx-0 mb-6 xl:mb- px-2 xl:px-0"
           >
-            2 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            Over the past two years, I’ve freelanced as a developer to build
+            dynamic web applications. I’ve honed my skills in the MERN stack,
+            TypeScript, and cloud technologies, delivering scalable,
+            user-focused solutions with features like real-time chat, live
+            video, payment integration, e-commerce functionality, authentication
+            systems, and interactive dashboards.
           </motion.p>
 
           {/* Counters */}
@@ -179,7 +220,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] xl:mt-6 xl:h-[480px] xl:pb-0 pb-24"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -188,7 +229,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duraton-300"
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -197,7 +238,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
@@ -205,13 +246,20 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex ">-</div>
+                  <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((iconObj, iconIndex) => {
                       return (
-                        <div className="text-2xl text-white" key={iconIndex}>
+                        <div
+                          className="relative text-2xl text-white group hover:scale-125 transition-all duration-300"
+                          key={iconIndex}
+                        >
                           {iconObj.icon}
+                          {/* Tooltip */}
+                          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:flex justify-center items-center bg-gray-800 text-white text-xs rounded px-2 py-1">
+                            {iconObj.icon.key}
+                          </div>
                         </div>
                       );
                     })}
