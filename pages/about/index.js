@@ -86,32 +86,23 @@ const aboutData = [
     ],
   },
   {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
-  {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Full Stack Developer - OCyber LLP, Islamabad",
+        stage: "Apr 2024 – Present",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "MERN Stack Developer - Freelance, Rawalpindi",
+        stage: "Nov 2023 – Apr 2024",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Junior MERN Stack Developer - Generation, Lahore",
+        stage: "Aug 2023 – Nov 2023",
+      },
+      {
+        title: "Front-End Web Developer - Binary Marvels, Rawalpindi",
+        stage: "Dec 2022 – Jun 2023",
       },
     ],
   },
@@ -119,16 +110,37 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Software Engineering - NUML, Islamabad, Pakistan",
+        stage: "2018",
+      },
+    ],
+  },
+  {
+    title: "certifications",
+    info: [
+      {
+        title: "Full Stack Engineer",
+        stage: "Jun 2023",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Building a Website with Node.js and Express.js",
+        stage: "Jun 2023",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Git Essential Training",
+        stage: "Jun 2023",
+      },
+      {
+        title: "JavaScript Essential Training",
+        stage: "May 2023",
+      },
+      {
+        title: "Learn MongoDB Course",
+        stage: "Apr 2023",
+      },
+      {
+        title: "Node.js Essential Training",
+        stage: "Apr 2023",
       },
     ],
   },
@@ -149,7 +161,7 @@ const About = () => {
       >
         {/* <AboutAvatar /> */}
       </motion.div>
-      <div className="container mx-auto h-full xl:mt-12 flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full mt-12 flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -220,7 +232,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] xl:mt-6 xl:h-[480px] xl:pb-0 pt-2 pb-24"
+          className="flex flex-col w-full xl:max-w-[48%] xl:mt-2 mt-6 xl:h-[480px] xl:pb-0 pt-2 pb-24"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -245,9 +257,11 @@ const About = () => {
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="font-light text-sm mb-2 md:mb-0">
+                    {item.title}
+                  </div>
                   <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className=" text-sm">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((iconObj, iconIndex) => {
                       return (

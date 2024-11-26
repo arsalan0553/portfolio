@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 // data
@@ -14,36 +13,40 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "BLENDA 101",
           path: "/thumb1.jpg",
         },
         {
-          title: "title",
+          title: "AFFAIRS",
+          path: "/collag4.png",
+        },
+        {
+          title: "ASSET MANAGEMENT SYSTEM",
+          path: "/collag3.png",
+        },
+        {
+          title: "SPOTJOIN",
+          path: "/collag5.png",
+        },
+        {
+          title: "RUGBY.XYZ",
           path: "/thumb2.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb4.jpg",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
-          path: "/thumb4.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-        },
-        {
-          title: "title",
+          title: "RUGBY.XYZ",
           path: "/thumb2.jpg",
+        },
+        {
+          title: "SWIFT STORE",
+          path: "/collag7.png",
+        },
+        {
+          title: "MYG-NATHIA",
+          path: "/collag8.png",
         },
         {
           title: "title",
@@ -77,9 +80,9 @@ const WorkSlider = () => {
                   <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e42062] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                   <div className="absolute bottom-0 translate-y-full  group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duraton-300">
                     <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                      <div className="delay-100">LIVE</div>
+                      <div className="delay-100">{image.title}</div>
                       <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                        PROJECT
+                        {/* PROJECT */}
                       </div>
                       <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
                         <BsArrowRight />

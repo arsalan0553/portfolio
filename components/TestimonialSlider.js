@@ -11,25 +11,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/av-1.svg",
+    name: "David Carter",
+    position: "Business Owner",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Arsalan delivered exceptional work on time and within budget. His attention to detail and communication made the entire process smooth and stress-free.",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    image: "/av-2.svg",
+    name: "Yaseen Khan",
+    position: "Startup Founder",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I’m impressed by Arsalan's ability to translate ideas into practical solutions. He was responsive and committed to delivering high-quality results.",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    image: "/av-3.svg",
+    name: "Chris Walker",
+    position: "Project Manager",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "As a freelancer, Arsalan stands out for his professionalism and reliability. The project exceeded my expectations, and I’ll definitely work with him again.",
   },
 ];
 

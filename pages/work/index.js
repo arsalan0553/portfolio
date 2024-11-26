@@ -26,9 +26,10 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
-              excepturi optio! Doloribus error nam fugit beatae eveniet quod
-              nemo harum
+              This section showcases a curated collection of my full-stack
+              development projects. Each project represents a unique blend of
+              creativity and technical expertise, demonstrating my ability to
+              design, develop, and deploy robust web applications.
             </motion.p>
           </div>
           <motion.div
