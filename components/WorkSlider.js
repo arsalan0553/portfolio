@@ -14,11 +14,11 @@ const workSlides = {
       images: [
         {
           title: "BLENDA 101",
-          path: "/thumb1.jpg",
+          path: "/collag9.png",
         },
         {
           title: "AFFAIRS",
-          path: "/collag4.png",
+          path: "/collag10.png",
         },
         {
           title: "ASSET MANAGEMENT SYSTEM",
@@ -37,8 +37,8 @@ const workSlides = {
     {
       images: [
         {
-          title: "RUGBY.XYZ",
-          path: "/thumb2.jpg",
+          title: "PUBPOLL",
+          path: "/collag11.png",
         },
         {
           title: "SWIFT STORE",
@@ -49,8 +49,8 @@ const workSlides = {
           path: "/collag8.png",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          title: "CARHUB",
+          path: "/collag12.png",
         },
       ],
     },
